@@ -2,6 +2,7 @@ import RPi.GPIO as GPIO
 import time
 from threading import Thread
 
+# new comment
 pin1=18
 pin2=23
 
