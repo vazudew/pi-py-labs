@@ -8,3 +8,4 @@ https://thepihut.com/blogs/raspberry-pi-tutorials/27968772-turning-on-an-led-wit
 
 check with gerrithub
 oo
+test verified by vreboot
