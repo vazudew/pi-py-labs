@@ -11,8 +11,8 @@ python:
   - "pypy-5.3.1"
 # command to install dependencies
 #not sure if this works
-install:
-  - pip install .
-  - pip install -r requirements.txt
+#install:
+  #- pip install .
+  #- pip install -r requirements.txt
 # command to run tests
-script: pytest
+script: builder/build.py
