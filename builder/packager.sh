@@ -1,4 +1,8 @@
 #!/bin/bash
+pushd
+
+scriptdir="${0%/*}"
+cd $scriptdir
 
 #package entire py script and archive
 timestamp=$(date +%Y%m%d_%H%M%S)
@@ -12,9 +16,11 @@ filename=${product}"-"${timestamp}".zip"
 echo $filename
 
 #source files
-sourceLoc='../pi-py/*'
+sourceLoc='../pi-py'
 echo $sourceLoc
 
 ls -la $sourceLoc
 #package all the files now
-gzip -r $sourceLoc > $filename
+tar -czvf $filename $sourceLoc
+
+popd
