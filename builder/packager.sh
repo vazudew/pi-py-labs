@@ -1,5 +1,5 @@
 #!/bin/bash
-pushd
+pushd $PWD
 
 scriptdir="${0%/*}"
 cd $scriptdir
